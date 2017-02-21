@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" translatesAutoresizingMaskIntoConstraints="NO" id="3DX-hQ-Aq0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SlideSample1" translatesAutoresizingMaskIntoConstraints="NO" id="3DX-hQ-Aq0">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="mNh-M1-t9Y"/>
@@ -41,6 +41,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Px3-7I-ZDd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1712.8" y="0.44977511244377816"/>
+        </scene>
+        <!--Slide Menu-->
+        <scene sceneID="pUl-VD-gAj">
+            <objects>
+                <viewController id="sgh-JI-0GF" customClass="RSlideMenu" customModule="SliderMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q4t-hS-GL2"/>
+                        <viewControllerLayoutGuide type="bottom" id="ymC-xZ-vsv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XKg-BF-6Oc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SlideSample2" translatesAutoresizingMaskIntoConstraints="NO" id="Hw8-DT-QI5">
+                                <rect key="frame" x="135" y="0.0" width="240" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="9FS-j3-tRp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ymC-xZ-vsv" firstAttribute="top" secondItem="Hw8-DT-QI5" secondAttribute="bottom" id="CYK-07-CQW"/>
+                            <constraint firstItem="Hw8-DT-QI5" firstAttribute="top" secondItem="q4t-hS-GL2" secondAttribute="bottom" constant="-64" id="jE4-oP-D6g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hw8-DT-QI5" secondAttribute="trailing" constant="-16" id="nJ6-Wl-qoq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="q8F-ZA-MLC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zn-bh-loE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3276" y="-558.17091454272872"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rgu-vm-dcS">
@@ -67,13 +99,24 @@
                                     <segue destination="wUr-8B-2FQ" kind="presentation" id="os4-Mg-Z7h"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef0-aX-xwJ">
+                                <rect key="frame" x="309" y="20.5" width="50" height="39"/>
+                                <state key="normal" image="Menu-2"/>
+                                <connections>
+                                    <segue destination="OP4-D5-z8p" kind="presentation" id="6HA-Gh-COJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ef0-aX-xwJ" firstAttribute="width" secondItem="V3i-jc-nOf" secondAttribute="width" id="3sD-Vz-fvy"/>
+                            <constraint firstItem="ef0-aX-xwJ" firstAttribute="centerY" secondItem="V3i-jc-nOf" secondAttribute="centerY" id="4di-Kv-aum"/>
                             <constraint firstItem="tEd-nJ-Fge" firstAttribute="centerY" secondItem="UIv-ZY-2ra" secondAttribute="centerY" id="6l5-fQ-1dW"/>
                             <constraint firstItem="tEd-nJ-Fge" firstAttribute="centerX" secondItem="UIv-ZY-2ra" secondAttribute="centerX" id="7ff-8h-bfl"/>
                             <constraint firstItem="V3i-jc-nOf" firstAttribute="top" secondItem="fPD-yF-ti9" secondAttribute="bottom" id="8ne-m9-TIz"/>
+                            <constraint firstItem="ef0-aX-xwJ" firstAttribute="height" secondItem="V3i-jc-nOf" secondAttribute="height" id="BX7-AP-MMB"/>
                             <constraint firstAttribute="leadingMargin" secondItem="V3i-jc-nOf" secondAttribute="leading" id="drr-D5-c0I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ef0-aX-xwJ" secondAttribute="trailing" id="nyI-R2-41w"/>
                             <constraint firstItem="tEd-nJ-Fge" firstAttribute="height" secondItem="UIv-ZY-2ra" secondAttribute="height" id="oU3-XT-jAv"/>
                             <constraint firstItem="tEd-nJ-Fge" firstAttribute="width" secondItem="UIv-ZY-2ra" secondAttribute="width" id="pBs-9Y-lgE"/>
                         </constraints>
@@ -109,9 +152,30 @@
             </objects>
             <point key="canvasLocation" x="774" y="0.0"/>
         </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="aWj-cI-ez6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OP4-D5-z8p" customClass="UISideMenuNavigationController" customModule="SliderMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0qo-IN-Axs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sgh-JI-0GF" kind="relationship" relationship="rootViewController" id="3fB-w2-qwt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PK8-8R-eTD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2567" y="-557"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Menu" width="414" height="1334"/>
+        <image name="Menu-2" width="30" height="30"/>
         <image name="SampleScreen" width="764" height="1341"/>
+        <image name="SlideSample1" width="414" height="1334"/>
+        <image name="SlideSample2" width="375" height="1334"/>
     </resources>
 </document>
