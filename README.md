@@ -23,6 +23,8 @@ Set the navigation view call to UISideMenuNavigationController
 Connect the button with navigation  controller  of your slide menu
 
 This project is inspires by:-
-[SWRevealViewController](https://github.com/John-Lluch/SWRevealViewController)
-[Swift-Slide-Menu](https://github.com/PhilippeBoisney/Swift-Slide-Menu)
-[REDS-Kit](https://dribbble.com/shots/3284162-REDS-Kit-free) for design screen
+[SWRevealViewController](https://github.com/John-Lluch/SWRevealViewController)</br>
+[Swift-Slide-Menu](https://github.com/PhilippeBoisney/Swift-Slide-Menu)</br>
+
+For design screen
+[REDS-Kit](https://dribbble.com/shots/3284162-REDS-Kit-free) 
