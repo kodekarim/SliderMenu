@@ -21,8 +21,8 @@
 
 /* Begin PBXFileReference section */
 		7063436E1E5C3CE400AAFFA6 /* SliderMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		706343711E5C3CE400AAFFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		706343731E5C3CE400AAFFA6 /* SlideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenu.swift; sourceTree = "<group>"; };
+		706343711E5C3CE400AAFFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "/Users/uber-abdul/SliderMenu/SliderMenu/AppDelegate.swift"; sourceTree = "<absolute>"; };
+		706343731E5C3CE400AAFFA6 /* SlideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SlideMenu.swift; path = "/Users/uber-abdul/SliderMenu/SliderMenu/SlideMenu.swift"; sourceTree = "<absolute>"; };
 		706343761E5C3CE400AAFFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		706343781E5C3CE400AAFFA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7063437B1E5C3CE400AAFFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,7 +30,7 @@
 		706343841E5C3CF900AAFFA6 /* SideMenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuManager.swift; sourceTree = "<group>"; };
 		706343851E5C3CF900AAFFA6 /* SideMenuTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTransition.swift; sourceTree = "<group>"; };
 		706343861E5C3CF900AAFFA6 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISideMenuNavigationController.swift; sourceTree = "<group>"; };
-		7063438B1E5C4C2900AAFFA6 /* RSlideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSlideMenu.swift; sourceTree = "<group>"; };
+		7063438B1E5C4C2900AAFFA6 /* RSlideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RSlideMenu.swift; path = "/Users/uber-abdul/SliderMenu/SliderMenu/RSlideMenu.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,9 @@
 				706343851E5C3CF900AAFFA6 /* SideMenuTransition.swift */,
 				706343861E5C3CF900AAFFA6 /* UISideMenuNavigationController.swift */,
 			);
-			path = Sources;
-			sourceTree = "<group>";
+			name = Sources;
+			path = "/Users/uber-abdul/SliderMenu/SliderMenu/Sources";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
